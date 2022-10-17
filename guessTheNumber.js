@@ -31,5 +31,5 @@ const readline = require('readline').createInterface({
         });
     }
     recursiveAsyncReadline();
-}
+}	
 game();
