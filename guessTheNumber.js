@@ -12,20 +12,20 @@ const readline = require('readline').createInterface({
             guess = Number(number);
             if(guess <=100 && guess>= 0){
                 if(guess==computerGuess){
-                    console.log(`You guessed it!`);
+                    console.log('You guessed it!');
                     return readline.close();
                 }
                 else if(guess<computerGuess){
-                    console.log(`Too low!`);
+                    console.log('Too low!');
                     recursiveAsyncReadline();
                 }
                 else if(guess>computerGuess){
-                    console.log(`Too high!`);
+                    console.log('Too high!');
                     recursiveAsyncReadline();
                 }
             }
             else {
-                console.log(`Invalid input! Try again...`);
+                console.log('Invalid input! Try again...');
                 recursiveAsyncReadline();
             }
         });
